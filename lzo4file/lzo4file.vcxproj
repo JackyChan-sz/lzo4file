@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{F994BC42-189C-4A7D-8782-412457768F13}</ProjectGuid>
+    <ProjectGuid>{7B15C60A-D9C1-4358-9419-08B553C7C519}</ProjectGuid>
     <RootNamespace>lzo4file</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>lzo4file</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -116,15 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\getopt\getopt.c" />
+    <ClCompile Include="lzo4file.c" />
+    <ClCompile Include="minilzo.c" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\getopt\getopt.h" />
     <ClInclude Include="lzoconf.h" />
     <ClInclude Include="lzodefs.h" />
     <ClInclude Include="minilzo.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\getopt\getopt.c" />
-    <ClCompile Include="minilzo.c" />
-    <ClCompile Include="lzo4file.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
